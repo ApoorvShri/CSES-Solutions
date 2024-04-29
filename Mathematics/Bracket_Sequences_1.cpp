@@ -16,7 +16,7 @@ w1 = number of ways to move from A to B
 w2 = number of ways to move from C to B
 number of ways to move from A to B without crossing a line = w1 - w2
 
-here n = number of opening or closing brackets
+here n = number of opening or closing brackets = length of sequence / 2
 we have to move from A(0,0) to B(2n,0) and we cannot move below y=0 or touch y=-1 because it will form an unbalanced sequence
 mirror A(0,0) along y=-1 which will give C(x1,-1-(y2-(-1))) = C(x1,-y1-2) = C(0,-2)
 
@@ -34,7 +34,7 @@ w2 = (2n)C(n+1)
 
 number of ways = w1 - w2 = (2n)C(n) - (2n)C(n+1) = 1/(n+1) * (2n)C(n)
 
-number of valid bracket sequences of length n = Catalan number = 1/(n+1) * (2n)C(n)
+number of valid bracket sequences of length 2n = Catalan number = 1/(n+1) * (2n)C(n)
 */
 
 #include<bits/stdc++.h>
